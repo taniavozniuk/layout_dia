@@ -8,7 +8,7 @@ const newtButton = document.querySelector('.waves__button2');
 let currentImageIndex = 0;
 
 function updateWavesImage() {
-  headerWaves.style.backroundImage = `url(${image[currentImageIndex]})`;
+  headerWaves.style.backgroundImage = `url(${image[currentImageIndex]})`;
 }
 
 prevButton.addEventListener('click', () => {
