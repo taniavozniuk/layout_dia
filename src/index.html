@@ -1,5 +1,8 @@
 <!doctype html>
-<html lang="en">
+<html
+  lang="en"
+  class="html"
+>
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -9,11 +12,201 @@
     <title>Dia</title>
     <link
       rel="stylesheet"
-      href="./styles/main.scss"
+      href="./main.scss"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
     />
   </head>
   <body>
-    <h1>Dia</h1>
-    <script src="scripts/main.js"></script>
+    <header class="header">
+      <div class="header__top">
+        <div class="header__icon">
+          <a href="#logo">
+            <img
+              src="images/logo/Logo_air.svg"
+              alt="Logo"
+            />
+          </a>
+          <a
+            href="#menu"
+            class="icon icon--menu"
+          ></a>
+        </div>
+        <nav>
+          <ul class="nav">
+            <li class="nav__item">
+              <a
+                href="#Aboutus"
+                class="nav__link"
+              >
+                About us
+              </a>
+            </li>
+            <li class="nav__item">
+              <a
+                href="#Services"
+                class="nav__link"
+              >
+                Services
+              </a>
+            </li>
+            <li class="nav__item">
+              <a
+                href="#Testimonials"
+                class="nav__link"
+              >
+                Testimonials
+              </a>
+            </li>
+            <li class="nav__item nav__item__contact">
+              <a
+                href="#Contact Us"
+                class="nav__link"
+                data-qa="hover"
+              >
+                Contact Us
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <a
+          href="#Hire us"
+          class="nav__link nav__button"
+        >
+          Hire us
+        </a>
+      </div>
+
+      <div class="header__bottom">
+        <h1 class="header__title">Strategic Agency</h1>
+        <h3 class="header__smalltitle">
+          We believe in the power of bold ideas that can solve business
+          challenges.
+        </h3>
+        <div class="header__button">
+          <button class="button">Learn more</button>
+        </div>
+      </div>
+      <div class="header__waves">
+        <div class="waves__bottom">
+          <div class="waves__button">
+            <button class="waves__button1">&lt;</button>
+            <button class="waves__button2">&gt;</button>
+          </div>
+          <h2 class="waves__title">INTRO</h2>
+          <h3 class="waves__smalltitle">
+            By the same illusion which lifts the horizon.
+          </h3>
+        </div>
+      </div>
+    </header>
+
+    <aside
+      class="menu page_menu"
+      id="menu"
+    >
+      <div class="conteiner">
+        <div class="header__menu">
+          <a href="#logo">
+            <img
+              src="images/logo/Logo_air.svg"
+              alt="Logo"
+            />
+          </a>
+          <a
+            href="#"
+            class="icon icon--close"
+          ></a>
+        </div>
+
+        <div class="menu__content">
+          <nav class="menu__navm navm">
+            <ul class="navm__list">
+              <li class="navm__item">
+                <a class="navm__link" href="#">
+                  Home
+                </a>
+              </li>
+
+              <li class="navm__item">
+                <a class="navm__link" href="#">
+                  Who we are
+                </a>
+              </li>
+
+              <li class="navm__item">
+                <a class="navm__link" href="#">
+                  Air is a full service
+                </a>
+              </li>
+
+              <li class="navm__item">
+                <a class="navm__link" href="#">
+                  What people say
+                </a>
+              </li>
+
+              <li class="navm__item">
+                <a class="navm__link" href="#">
+                  Vision, Passion, Results
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <a
+          href="tel:654 321 987"
+          class="menu__phone-number"
+        >
+          654 321 987
+          </a>
+        </div>
+
+      </div>
+    </aside>
+
+    <main class="main">
+      <section class="who-we-are">
+        <h2>Who we are</h2>
+      </section>
+
+      <section class="our-expertise">
+        <h2>Our expertise</h2>
+      </section>
+
+      <section class="creative-agency">
+        <h2>Air is a full service creative agency</h2>
+      </section>
+
+      <section class="people-say">
+        <h2>What people say</h2>
+      </section>
+
+      <section class="vision">
+        <h2>Vision, Passion, Results</h2>
+      </section>
+    </main>
   </body>
 </html>

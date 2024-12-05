@@ -1,0 +1,32 @@
+@import './styles/utils/mixins';
+@import './styles/utils/vars';
+@import './styles/utils/variables.scss';
+@import './utils';
+@import './styles/blocks/header.scss';
+@import './styles/blocks/icon';
+@import './styles/blocks/nav';
+@import './styles/blocks/menu';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #2060f6;
+}
+
+body {
+  background: #f2f6fa;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  // display: flex;
+  height: 100%;
+}

@@ -1,0 +1,145 @@
+// .menu{
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   opacity: 0;
+//   transform: translateX(-100%);
+//   transition: all 500ms;
+//   right: 0;
+//   background-color: rgba(170, 169, 169, 0.341);
+//   height: 100vh;
+//   box-sizing: border-box;
+//   padding: 20px 20px 40px;
+
+//   &:target{
+//     opacity: 1;
+//     transform: translateX(0);
+//   }
+// }
+
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-color: rgb(131, 166, 249);
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: all 1500ms;
+
+  &:target {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.menu__navm {
+  margin-bottom: 40px;
+}
+
+.navm__list{
+  margin:  0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.navm__link{
+  color: rgba(60, 59, 59, 0.784);
+  position: relative;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 2px;
+  font-weight: 600;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: wheat;
+    transition: transform 0.3s;
+    transform-origin: left;
+
+    transform: scale(0);
+  }
+
+  &:hover::after {
+    transform: scale(1);
+  }
+}
+
+.menu__content {
+  padding: 0 20px;
+
+}
+
+.menu__phone-number{
+display: block;
+color: rgba(60, 59, 59, 0.784);
+text-decoration: none;
+
+padding-bottom: 7px;
+border-bottom: 1px dashed rgba(60, 59, 59, 0.784);;
+width: fit-content;
+
+font-size: 16px;
+line-height: 22px;
+letter-spacing: 2px;
+text-decoration: none;
+}
+
+// .navm__list {
+//   display: flex; /* Залишаємо flex, щоб контролювати вертикальне вирівнювання */
+//   flex-direction: column; /* Встановлюємо вертикальне вирівнювання елементів */
+//   width: 200px; /* Ширина контейнера меню */
+// }
+
+// .navm__item {
+//   font-size: 16px;
+//   font-family: Arial, sans-serif;
+//   padding: 12px;
+//   cursor: pointer;
+//   text-align: center; /* Вирівнюємо текст по центру */
+//   background-color: #2060f6; /* Колір фону елементів */
+//   transition:
+//     background-color 0.3s ease,
+//     color 0.3s ease;
+// }
+
+// /* Стилі для активного стану елементу */
+// .navm__item:hover {
+//   background-color: #fff; /* Фон при наведенні */
+//   color: #2060f6; /* Колір тексту при наведенні */
+// }
+
+// /* Стилі для телефонного номера */
+// .menu__phone-number {
+//   font-size: 18px;
+//   font-family: Arial, sans-serif;
+//   text-decoration: none;
+//   color: #333;
+//   padding: 10px 20px;
+//   border: 2px solid #333;
+//   border-radius: 5px;
+//   margin-top: 20px; /* Відступ зверху, щоб відділити від списку */
+//   display: inline-block; /* Забезпечує правильний виведення */
+//   transition:
+//     background-color 0.3s ease,
+//     color 0.3s ease;
+// }
+
+// .menu__phone-number:hover {
+//   background-color: #007bff;
+//   color: white;
+// }
