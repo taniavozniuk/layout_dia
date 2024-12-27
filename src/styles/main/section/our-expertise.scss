@@ -1,0 +1,76 @@
+.our-expertise {
+  margin-top: 120px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  padding: 0 20px 0 20px;
+}
+
+.our-expertise__product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+.product__photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 30px;
+  /* підсвічування */
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+
+}
+
+.product__photo:hover {
+  /* підсвічування */
+  box-shadow: 0px 0px 20px 8px rgba(37, 55, 87, 0.7);
+  transform: scale(1.05); /*  збільшення при наведенні */
+}
+
+.product__title {
+  font-family: Poppins, Arial;
+  margin-top: 32px;
+  text-align: center;
+  color: #253757;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.product__description {
+  margin: 0;
+  margin-top: 16px;
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+  font-family:
+    Open Sans,
+    Arial;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #6c788b;
+}
+
+.product__content {
+  margin-top: 56px;
+}
+
+.our-expertise__title {
+  padding-top: 72px;
+}
+
+.communication-description {
+  padding-bottom: 72px;
+  margin: 0;
+  text-align: center;
+  font-family:
+    Open Sans,
+    Arial;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #6c788b;
+}

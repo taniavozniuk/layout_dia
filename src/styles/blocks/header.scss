@@ -126,7 +126,55 @@
   line-height: 27px;
   text-decoration: none;
   box-sizing: border-box;
-  border: #2060f6;
+  border: none;
+  cursor: pointer;
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.button:hover {
+  background-color: #1040b6;
+  transform: scale(1.01);
+  box-shadow: 0px 4px 15px rgba(1, 52, 171, 0.5);
+}
+
+.button:active {
+  transform: scale(0.98);
+  box-shadow: 0px 4px 15px rgba(1, 52, 171, 0.5);
+}
+
+/* Анімація на наведення */
+.waves__button1:hover {
+  background-color: #1c3b52; /* змінюємо колір фону */
+  transform: scale(1.1); /* кнопка трохи збільшується */
+}
+
+/* Анімація при натисканні */
+.waves__button1:active {
+  transform: scale(0.95); /* кнопка стає трохи меншою */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* додаємо ефект тіні при натисканні */
+}
+
+/* Пульсація для анімації */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.waves__button1:hover {
+  animation: pulse 1s infinite; /* пульсація при наведенні */
 }
 
 .waves__button {
@@ -168,6 +216,39 @@
   line-height: 27px;
   text-decoration: none;
   box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Анімація на наведення */
+.waves__button2:hover {
+  background-color: #1c3b52; /* змінюємо колір фону */
+  transform: scale(1.1); /* кнопка трохи збільшується */
+}
+
+/* Анімація при натисканні */
+.waves__button2:active {
+  transform: scale(0.95); /* кнопка стає трохи меншою */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* додаємо ефект тіні при натисканні */
+}
+
+/* Пульсація для анімації */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.waves__button2:hover {
+  animation: pulse 1s infinite; /* пульсація при наведенні */
 }
 
 .waves__title {

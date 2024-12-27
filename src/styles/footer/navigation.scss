@@ -1,0 +1,28 @@
+.navigation{
+  margin: 80px 0 0 0;
+  padding-bottom: 80px;
+}
+
+.footer__logo{
+  margin-bottom: 48px;
+}
+
+.footer_list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.footer__link{
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  font-family: Poppins, Arial;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 3px;
+  line-height: 19.5px;
+}

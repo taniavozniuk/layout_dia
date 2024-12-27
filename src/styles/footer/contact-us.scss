@@ -1,0 +1,81 @@
+.contact-us{
+  margin: 80px 20px 0 20px;
+}
+
+.Contact__title{
+  color: #fff;
+  font-family: Poppins, Arial;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+  margin: 0 0 48px 0;
+}
+
+.calls-us{
+margin-bottom: 40px;
+}
+
+.calls-us__title{
+  margin: 0;
+  font-family: Poppins, Arial;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 19,5px;
+  letter-spacing: 3px;
+  color: #959595;
+  margin-bottom: 8px;
+}
+
+.calls-us__number{
+  color: #FFFFFF;
+  text-decoration: none;
+  font-family: Open Sans, Arial;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.visit-us{
+  margin-bottom: 40px;
+}
+
+.visit-us__title{
+  margin: 0;
+  font-family: Poppins, Arial;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 19,5px;
+  letter-spacing: 3px;
+  color: #959595;
+  margin-bottom: 8px;
+}
+
+.visit-us__description{
+  color: #FFFFFF;
+  text-decoration: none;
+  font-family: Open Sans, Arial;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.socials__title{
+  margin: 0;
+  font-family: Poppins, Arial;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 19,5px;
+  letter-spacing: 3px;
+  color: #959595;
+  margin-bottom: 16px;
+}
+
+.icons__socials{
+  right: 32px;
+  gap: 32px;
+  display: flex;
+  :hover{
+    cursor: pointer;
+    opacity: 0.7;
+  }
+}
