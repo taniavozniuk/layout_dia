@@ -20,6 +20,10 @@
 @import './styles/footer/contact-us';
 @import './styles/footer/navigation';
 
+@import './styles/loading/loading.scss';
+
+// @import './srotinka.js';
+
 *,
 *::before,
 *::after {
@@ -33,6 +37,7 @@
 body {
   margin: 0;
   padding: 0;
+
 }
 
 ul {

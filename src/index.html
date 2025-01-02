@@ -56,7 +56,31 @@
     ></script>
   </head>
   <body>
-    <header class="header">
+    <!-- <div id="loader">
+      <div class="cssload-thecube">
+        <div class="cssload-cube"></div>
+        <div class="cssload-cube"></div>
+        <div class="cssload-cube"></div>
+        <div class="cssload-cube"></div>
+      </div>
+    </div>
+    <script>
+      window.addEventListener('load', () => {
+        const loader = document.getElementById('loader');
+        const header = document.getElementById('header');
+
+        // Додати затримку перед приховуванням завантажувача
+        setTimeout(() => {
+          loader.classList.add('hidden'); // Ховає завантажувач
+          header.classList.remove('hidden'); // Показує контент
+        }, 1500); // Затримка у мілісекундах (1500 = 1.5 секунди)
+      });
+    </script>
+    <div class="storinka"> -->
+    <header
+      id="hidden"
+      class="header"
+    >
       <div class="header__top">
         <div class="header__icon">
           <a href="#logo">
@@ -598,7 +622,7 @@
                   class="footer__link"
                   href="#our-expertise"
                 >
-                Work
+                  Work
                 </a>
               </li>
 
@@ -607,17 +631,16 @@
                   class="footer__link"
                   href="#"
                 >
-                Services
+                  Services
                 </a>
               </li>
-
 
               <li class="footer_item">
                 <a
                   class="footer__link"
                   href="#"
                 >
-                Contact Us
+                  Contact Us
                 </a>
               </li>
             </ul>
@@ -625,5 +648,6 @@
         </div>
       </section>
     </footer>
+    <!-- </div> -->
   </body>
 </html>

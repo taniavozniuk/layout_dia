@@ -1,5 +1,9 @@
+.creative__conteiner{
+padding: 20px;
+}
+
 .creative__content {
-  margin: 120px 18px 48px 20px;
+  margin: 120px 0 48px 0;
 }
 
 .small-creative__title {
@@ -35,16 +39,16 @@
 .agency__content {
   border-radius: 16px;
   background-color: #FFFFFF;
-  width: 280px;
+  width: 100%;
   height: 264px;
-  margin: 24px 20px 20px;
-  transition: background 0.3s ease, transform 0.3s ease;
+  transition: background 0.3s ease, transform 0.3s ease-in-out;
+  margin-bottom: 24px;
 }
 
 .agency__content:hover {
   /* градієнтний фон */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* додавання тіні */
-  background: linear-gradient(135deg, rgba(37, 55, 87, 0.1), rgba(37, 55, 87, 0.5));
+  background: linear-gradient(135deg, rgba(113, 114, 114, 0.1),  rgba(113, 114, 114, 0.1));
+  box-shadow: 0 4px 10px rgba(224, 222, 222, 0.2); /* Легка тінь для глибини */
   transform: scale(1.05);
 }
 
