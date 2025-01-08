@@ -8,29 +8,84 @@
   justify-content: space-between;
   position: absolute;
 
-  // height: 100%;
+  height: 100%;
+  &__bottom {
+    margin: 48px 19px 0 21px;
+    @include pageGrid;
+  }
+
+  &__top {
+    margin-top: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__icon {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    margin-top: 72px;
+    grid-column: -1 / 1;
+
+    @include onTablet{
+      grid-column: 1 / 4;
+    }
+  }
+
+  &__smalltitle {
+    margin: 32px 0 0 0;
+    font-family: Poppins, sans-serif;
+    width: 100%;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #fff;
+    grid-column: -1 / 1;
+
+    @include onTablet {
+      // width: 65% ;
+      grid-column: 1 / 5;
+    }
+  }
+
+  &__title {
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 62.4px;
+    color: #fff;
+    margin: 0;
+    grid-column: -1 / 1;
+
+    @include onTablet {
+      height: 100%;
+      text-align: center;
+      font-size: 64px;
+      line-height: 68px;
+      justify-content: flex-start;
+      display: flex;
+    }
+  }
+
+  &__menu {
+    margin-top: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    margin-bottom: 32px;
+  }
 }
 
-.header__bottom {
-  margin: 48px 19px 0 21px;
-  @include pageGrid;
-}
-
-.header__top {
-  margin-top: 18px;
-  padding-left: 20px;
-  padding-right: 20px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.header__icon {
-  display: flex;
-  gap: 32px;
-  align-items: center;
-}
-
-.header__waves {
+.waves {
   background-image: url(./images/Photo.png);
   margin-top: 18px;
   background-repeat: no-repeat;
@@ -53,59 +108,139 @@
     bottom: 0;
     width: 50%;
   }
+
+  &__bottom {
+    margin-top: auto; /* Опускає елемент вниз */
+    width: 100%;
+  }
+
+  &__button1:hover {
+    background-color: #1c3b52;
+    transform: scale(1.1);
+  }
+
+  &__button1:active {
+    transform: scale(0.95);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.2);
+      opacity: 0.7;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  &__button1:hover {
+    animation: pulse 1s infinite;
+  }
+
+  &__button {
+    display: flex;
+    gap: 16px;
+  }
+
+  &__button1 {
+    width: 32px;
+    height: 32px;
+    border-radius: 100px;
+    background-color: #071d2b;
+    border: #2c2c2c;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+
+  &__button2 {
+    width: 32px;
+    height: 32px;
+    border-radius: 100px;
+    background-color: #071d2b;
+    border: #2c2c2c;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+  }
+
+
+  &__button2:hover {
+    background-color: #1c3b52;
+    transform: scale(1.1);
+  }
+
+
+  &__button2:active {
+    transform: scale(0.95);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.2);
+      opacity: 0.7;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  &__button2:hover {
+    animation: pulse 1s infinite; /* пульсація при наведенні */
+  }
+
+  &__title {
+    margin: 16px 0 0 0;
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 19px;
+    color: #fff;
+  }
+
+  &__smalltitle {
+    font-family: Open-Sans, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #fff;
+  }
+
 }
+
 
 .main {
   margin-top: 40px;
 }
 
-.waves__bottom {
-  margin-top: auto; /* Опускає елемент вниз */
-  width: 100%;
-}
-
-.header__button {
-  display: flex;
-  justify-content: center;
-  margin-top: 72px;
-}
-
-.header__smalltitle {
-  margin: 32px 0 0 0;
-  font-family: Poppins, sans-serif;
-  width: 100%;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 27px;
-  color: #fff;
-  grid-column: -1 / 1;
-
-  @include onTablet {
-    // width: 65% ;
-    grid-column: 1 / 5;
-  }
-}
-
-
-.header__title {
-  font-family: Poppins, sans-serif;
-  font-weight: 600;
-  font-size: 52px;
-  line-height: 62.4px;
-  color: #fff;
-  margin: 0;
-  grid-column: -1 / 1;
-
-  @include onTablet {
-    height: 100%;
-    text-align: center;
-    font-size: 64px;
-    line-height: 68px;
-    justify-content: flex-start;
-    display: flex;
-
-  }
-}
 
 .button {
   width: 100%;
@@ -129,156 +264,14 @@
     background-color 0.3s ease,
     box-shadow 0.3s ease;
 
-}
+    &:hover {
+      background-color: #1040b6;
+      transform: scale(1.01);
+      box-shadow: 0px 4px 15px rgba(1, 52, 171, 0.5);
+    }
 
-.button:hover {
-  background-color: #1040b6;
-  transform: scale(1.01);
-  box-shadow: 0px 4px 15px rgba(1, 52, 171, 0.5);
-}
-
-.button:active {
-  transform: scale(0.98);
-  box-shadow: 0px 4px 15px rgba(1, 52, 171, 0.5);
-}
-
-.header__button{
-  grid-column: -1 / 1;
-
-  @include onTablet{
-    grid-column: 1 / 4;
-  }
-}
-
-/* Анімація на наведення */
-.waves__button1:hover {
-  background-color: #1c3b52; /* змінюємо колір фону */
-  transform: scale(1.1); /* кнопка трохи збільшується */
-}
-
-/* Анімація при натисканні */
-.waves__button1:active {
-  transform: scale(0.95); /* кнопка стає трохи меншою */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* додаємо ефект тіні при натисканні */
-}
-
-/* Пульсація для анімації */
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-    opacity: 1;
-  }
-  50% {
-    transform: scale(1.2);
-    opacity: 0.7;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
-.waves__button1:hover {
-  animation: pulse 1s infinite; /* пульсація при наведенні */
-}
-
-.waves__button {
-  display: flex;
-  gap: 16px;
-}
-
-.waves__button1 {
-  width: 32px;
-  height: 32px;
-  border-radius: 100px;
-  background-color: #071d2b;
-  border: #2c2c2c;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 27px;
-  text-decoration: none;
-  box-sizing: border-box;
-}
-
-.waves__button2 {
-  width: 32px;
-  height: 32px;
-  border-radius: 100px;
-  background-color: #071d2b;
-  border: #2c2c2c;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 27px;
-  text-decoration: none;
-  box-sizing: border-box;
-  transition: all 0.3s ease-in-out;
-}
-
-/* Анімація на наведення */
-.waves__button2:hover {
-  background-color: #1c3b52; /* змінюємо колір фону */
-  transform: scale(1.1); /* кнопка трохи збільшується */
-}
-
-/* Анімація при натисканні */
-.waves__button2:active {
-  transform: scale(0.95); /* кнопка стає трохи меншою */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* додаємо ефект тіні при натисканні */
-}
-
-/* Пульсація для анімації */
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-    opacity: 1;
-  }
-  50% {
-    transform: scale(1.2);
-    opacity: 0.7;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
-.waves__button2:hover {
-  animation: pulse 1s infinite; /* пульсація при наведенні */
-}
-
-.waves__title {
-  margin: 16px 0 0 0;
-  font-family: Poppins, sans-serif;
-  font-weight: 700;
-  font-size: 13px;
-  line-height: 19px;
-  color: #fff;
-}
-
-.waves__smalltitle {
-  font-family: Open-Sans, sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 19px;
-  color: #fff;
-}
-
-.header__menu {
-  margin-top: 18px;
-  padding-left: 20px;
-  padding-right: 20px;
-  display: flex;
-  gap: 32px;
-  align-items: center;
-  margin-bottom: 32px;
+    &:active {
+      transform: scale(0.98);
+      box-shadow: 0px 4px 15px rgba(1, 52, 171, 0.5);
+    }
 }

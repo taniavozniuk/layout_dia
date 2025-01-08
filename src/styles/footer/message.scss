@@ -10,11 +10,19 @@
 .message__title{
   padding: 72px 0 48px 0;
   text-align: left;
+
   font-family: Poppins, Arial;
   font-weight: 600;
   font-size: 32px;
   line-height: 41.6px;
   color: #fff;
+
+  grid-column: span 2;
+
+  @include onTablet{
+    grid-column: 1 / 5;
+    line-height: 48px;
+  }
 
 }
 
@@ -65,6 +73,9 @@
 .message__button-wrapper{
   justify-content: center;
   @include pageGrid;
+  // @include onTablet{
+  //   grid-column: 1 / 6;
+  // }
 }
 
 .message__button{
@@ -92,9 +103,12 @@
     background-color 0.3s ease,
     box-shadow 0.3s ease;
 
+    grid-column: -1 / 1;
+
     @include onTablet{
-      grid-column: 1 / 6;
+      grid-column: 1 / 4;
     }
+
 }
 
 .message__button:hover {

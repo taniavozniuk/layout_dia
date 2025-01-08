@@ -37,6 +37,7 @@ margin-bottom: 40px;
 
 .visit-us{
   margin-bottom: 40px;
+  // @include pageGrid;
 }
 
 .visit-us__title{
@@ -48,6 +49,11 @@ margin-bottom: 40px;
   letter-spacing: 3px;
   color: #959595;
   margin-bottom: 8px;
+  width: 100%;
+
+  @include onTablet{
+    width: 70%;
+  }
 }
 
 .visit-us__description{
