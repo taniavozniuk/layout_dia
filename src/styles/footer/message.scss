@@ -39,7 +39,7 @@
   grid-column: -1 / 1;
 
   @include onTablet{
-    grid-column: 1 / 4;
+    grid-column: 1 / 5;
   }
 }
 
@@ -72,10 +72,10 @@
 
 .message__button-wrapper{
   justify-content: center;
-  @include pageGrid;
-  // @include onTablet{
-  //   grid-column: 1 / 6;
-  // }
+  // @include pageGrid;
+  @include onTablet{
+    width: 75%;
+  }
 }
 
 .message__button{

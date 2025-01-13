@@ -6,7 +6,7 @@ import photo3 from '../images/Photo3.svg';
 
 const image = [photo1, photo2, photo3];
 
-const headerWaves = document.querySelector('.header__waves');
+const headerWaves = document.querySelector('.waves');
 const prevButton = document.querySelector('.waves__button1');
 const newtButton = document.querySelector('.waves__button2');
 
@@ -19,11 +19,14 @@ function updateWavesImage() {
 prevButton.addEventListener('click', () => {
   currentImageIndex = (currentImageIndex - 1 + image.length) % image.length;
   updateWavesImage();
+  console.log(addEventListener)
 });
 
 newtButton.addEventListener('click', () => {
   currentImageIndex = (currentImageIndex + 1) % image.length;
   updateWavesImage();
+  updateWavesImage();
+  console.log(addEventListener)
 });
 
 updateWavesImage();
