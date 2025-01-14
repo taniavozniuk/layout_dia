@@ -10,8 +10,12 @@
 
   height: 100vh;
   &__bottom {
-    margin: 48px 19px 0 21px;
+    padding: 48px 19px 0 21px;
     @include pageGrid;
+
+    @include onDesktop{
+      padding: 48px 19px 205px 21px;
+    }
   }
 
   &__top {
@@ -72,6 +76,11 @@
       justify-content: flex-start;
       display: flex;
     }
+
+    @include onDesktop{
+      width: 200px;
+      text-align: left;
+    }
   }
 
   &__menu {
@@ -106,6 +115,8 @@
     right: 0;
     bottom: 0;
     width: 50%;
+    height: calc(100vh - var(--header-height));
+
   }
 
   &__bottom {

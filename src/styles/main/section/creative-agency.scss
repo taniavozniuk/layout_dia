@@ -1,9 +1,16 @@
 .creative__conteiner{
 padding: 20px;
+@include pageGrid;
+
 }
 
 .creative__content {
   margin: 120px 0 48px 0;
+
+  @include onTablet{
+    margin: 148px 0 48px 0;
+    grid-column: span 3;
+  }
 }
 
 .small-creative__title {
@@ -43,6 +50,10 @@ padding: 20px;
   height: 264px;
   transition: background 0.3s ease, transform 0.3s ease-in-out;
   margin-bottom: 24px;
+
+  @include onTablet{
+    grid-column: span 3;
+  }
 }
 
 .agency__content:hover {
