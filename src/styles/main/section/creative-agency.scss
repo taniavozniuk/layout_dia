@@ -6,6 +6,7 @@ padding: 20px;
 
 .creative__content {
   margin: 120px 0 48px 0;
+  grid-column: 1 / -1;
 
   @include onTablet{
     margin: 148px 0 48px 0;
@@ -50,10 +51,15 @@ padding: 20px;
   height: 264px;
   transition: background 0.3s ease, transform 0.3s ease-in-out;
   margin-bottom: 24px;
+  grid-column: 1 / -1;
 
   @include onTablet{
-    grid-column: span 3;
+    // grid-column: span 3;
   }
+}
+
+.agency__content--left{
+  grid-column: left;
 }
 
 .agency__content:hover {

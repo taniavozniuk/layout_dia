@@ -24,6 +24,7 @@
     padding-right: 20px;
     display: flex;
     justify-content: space-between;
+    padding-bottom: 38px;
   }
 
   &__icon {
@@ -111,13 +112,14 @@
   top: 30px;
 
   @include onDesktop{
+    margin-top: 38px;
     position: absolute;
     right: 0;
     bottom: 0;
     width: 50%;
     height: calc(100vh - var(--header-height));
-
   }
+
 
   &__bottom {
     margin-top: auto; /* Опускає елемент вниз */
