@@ -10,7 +10,7 @@ padding: 20px;
 
   @include onTablet{
     margin: 148px 0 48px 0;
-    grid-column: span 3;
+    grid-column: 1 / 4;
   }
 }
 
@@ -54,12 +54,17 @@ padding: 20px;
   grid-column: 1 / -1;
 
   @include onTablet{
-    // grid-column: span 3;
-  }
-}
+    &:nth-child(odd) {
+      grid-column: 4 / span 4;
+    }
 
-.agency__content--left{
-  grid-column: left;
+    &:nth-child(even) {
+      grid-column: 1 / 4;
+    }
+    &:nth-child(odd):not(:nth-child(2)) {
+      margin-top: 116px; // Зміщення вниз лише для парних, крім другого.
+    }
+  }
 }
 
 .agency__content:hover {
