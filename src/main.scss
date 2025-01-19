@@ -3,6 +3,8 @@
 @import './styles/utils/variables';
 @import './utils';
 
+@import './page.scss';
+
 @import './styles/blocks/header';
 @import './styles/blocks/icon';
 @import './styles/blocks/nav';
@@ -34,10 +36,9 @@
 }
 
 body {
-  // scroll-behavior: smooth;
+  scroll-behavior: smooth;
   margin: 0;
   padding: 0;
-
 }
 
 ul {

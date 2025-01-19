@@ -67,6 +67,18 @@
   list-style-type: none;
 }
 
-// .nav__button {
-//   margin-top: 18px;
-// }
+.nav__button {
+  all: unset;
+  cursor: pointer;
+  border: none;
+  border-bottom: 2px solid #2060F6;
+  font-family: Poppins, Arial, sans-serif;
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 19.5px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  text-transform: uppercase;
+}

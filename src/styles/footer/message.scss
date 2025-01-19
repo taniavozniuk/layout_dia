@@ -1,16 +1,27 @@
 .send__messange{
-  @include pageGrid;
+
+  @include onDesktop{
+    grid-column:  1 / 7;
+  }
+
 }
 
 .message{
-  margin: 0 20px 0 20px;
-  padding: 0 ;
+  grid-column: 1 / -1;
+
+  @include onTablet{
+    grid-column: 1 / 5;
+  }
+
+  @include onDesktop{
+    grid-column: 1 / 6;
+  }
 }
 
 .message__title{
   padding: 72px 0 48px 0;
   text-align: left;
-
+  margin: 0;
   font-family: Poppins, Arial;
   font-weight: 600;
   font-size: 32px;
@@ -20,6 +31,7 @@
   grid-column: span 2;
 
   @include onTablet{
+    padding: 180px 0 56px 0;
     grid-column: 1 / 5;
     line-height: 48px;
   }

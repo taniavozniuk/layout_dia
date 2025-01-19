@@ -2,6 +2,14 @@
   margin: 120px 20px 0 20px;
 }
 
+.conteiner__people{
+  @include pageGrid;
+  row-gap: 24px;
+  @include onTablet{
+    row-gap: 30px;
+  }
+}
+
 .small-people__title {
   font-family: Poppins, Arial;
   font-weight: 700;
@@ -18,10 +26,20 @@
   line-height: 41.6px;
   color: #253757;
   margin: 16px 0 48px 0;
-}
+  grid-column: 1 / -1;
+  width: 100%;
+  justify-content: flex-start;
+  display: flex;
 
-.people__con {
-  margin-top: 24px;
+  @include onTablet {
+    margin: 16px 0 61px 0;
+    width: 30%;
+    text-align: left;
+  }
+
+  @include onDesktop {
+    width: 19%;
+  }
 }
 
 .people__coments {
@@ -29,9 +47,15 @@
   background-color: #ffffff;
   width: 100%;
   height: 100%;
-  margin-top: 24px;
+  margin-bottom: 24px;
   transition: all 0.3s ease;
+  grid-column: 1 /-1;
 
+
+
+  @include onDesktop {
+    grid-column: span 4;
+  }
 }
 
 .people__coments:hover {
@@ -108,7 +132,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .wrapper {
@@ -118,7 +141,7 @@
   padding-bottom: 32px;
 }
 
-.div{
+.div {
   padding-top: 32px;
 }
 
@@ -128,7 +151,7 @@
   position: absolute;
   width: 108.98px;
   height: 43.9px;
-  background-color: #2060F6;
+  background-color: #2060f6;
   border-radius: 12px;
   z-index: 1;
 }

@@ -1,4 +1,5 @@
 'use strict';
+
 // #перемиканя картинок в Waves# //
 import photo1 from '../images/Photo.png';
 import photo2 from '../images/Photo2.png';

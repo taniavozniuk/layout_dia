@@ -1,7 +1,7 @@
 <!doctype html>
 <html
   lang="en"
-  class="html"
+  class="page"
 >
   <head>
     <meta charset="UTF-8" />
@@ -55,7 +55,7 @@
       defer
     ></script>
   </head>
-  <body>
+  <body class="page__body">
     <!-- <div id="loader">
       <div class="cssload-thecube">
         <div class="cssload-cube"></div>
@@ -76,7 +76,6 @@
         }, 1500); // Затримка у мілісекундах (1500 = 1.5 секунди)
       });
     </script> -->
-    <!-- <div class="storinka"> -->
     <header
       id="hidden"
       class="header"
@@ -131,12 +130,12 @@
             </li>
           </ul>
         </nav>
-        <a
+        <button
           href="#Hire us"
-          class="nav__link nav__button"
+          class="nav__button"
         >
           Hire us
-        </a>
+        </button>
       </div>
       <div class="header__bottom">
         <!-- <div class="header__tit"> -->
@@ -241,414 +240,426 @@
       </div>
     </aside>
 
-    <main class="main__content">
-      <section
-        class="who-we-are"
-        id="who-we-are"
-      >
-        <h2 class="who-we-are__title section__title">Who we are</h2>
-        <div class="who-we-are__content">
-          <a class="who-we-are__description">
-            We embrace a strategic approach to creative ideas. We are interested
-            in people and human relationships. This is the main thing you need
-            to know about us. We believe in the power of bold ideas that can
-            solve business challenges.
-          </a>
-        </div>
-      </section>
-
-      <section
-        class="our-expertise"
-        id="our-expertise"
-      >
-        <h2 class="our-expertise__title section__title">Our expertise</h2>
-        <div class="our-expertise__product">
-          <article class="product__content">
-            <img
-              class="product__photo"
-              src="./images/our-expertise/Branding.png"
-              alt="Branding"
-            />
-            <h3 class="product__title">Branding</h3>
-            <a class="product__description">
-              We create additional value for companies, products, services as
-              well as verbal and visual ways to deliver it to the audience.
-            </a>
-          </article>
-
-          <article class="product__content">
-            <img
-              class="product__photo"
-              src="./images/our-expertise/Communication.png"
-              alt="Communication"
-            />
-            <h3 class="product__title">Communication</h3>
-            <a class="product__description">
-              We strive to create communications that can increase media
-              performance. We use everything — words, meanings, stories, art,
-              movies.
-            </a>
-          </article>
-
-          <article class="product__content">
-            <img
-              class="product__photo"
-              src="./images/our-expertise/Strategy.png"
-              alt="Communication"
-            />
-            <h3 class="product__title">Strategy</h3>
-
-            <a class="product__description">
-              We create business growth strategies, from the moment of its birth
-              to the achievement of the necessary business indicators.
-            </a>
-          </article>
-        </div>
-      </section>
-
-      <section class="creative-agency">
-        <div class="creative__conteiner">
-          <div class="creative__content">
-            <a class="small-creative__title">Services</a>
-            <h2 class="creative__title">
-              Air is a full service creative agency
-            </h2>
-            <a class="creative-description">
-              Deep analytics, strong strategy and bright creative ideas.
-              <br />
-              <br />
-              We are sure that first-rate job is possible only if all three
-              components are united.
+    <main class="main">
+      <div class="main__container">
+        <section
+          class="who-we-are"
+          id="who-we-are"
+        >
+          <h2 class="who-we-are__title section__title">Who we are</h2>
+          <div class="who-we-are__content">
+            <a class="who-we-are__description">
+              We embrace a strategic approach to creative ideas. We are
+              interested in people and human relationships. This is the main
+              thing you need to know about us. We believe in the power of bold
+              ideas that can solve business challenges.
             </a>
           </div>
+        </section>
 
-          <article class="agency__content agency__content--left">
-            <div class="agency__number">
-              <a class="number">001</a>
-            </div>
-            <div class="background"></div>
-            <h2 class="agency__title">
-              Brand Development Copywriting Logo & Webite Design Packaging
-            </h2>
-            <div class="agency__button">
-              <button class="rigth__button">&#8594;</button>
-              <a class="button__text">Learn more</a>
-            </div>
-          </article>
+        <section
+          class="our-expertise"
+          id="our-expertise"
+        >
+          <h2 class="our-expertise__title section__title">Our expertise</h2>
+          <div class="our-expertise__product">
+            <article class="product__content">
+              <img
+                class="product__photo"
+                src="./images/our-expertise/Branding.png"
+                alt="Branding"
+              />
+              <h3 class="product__title">Branding</h3>
+              <h3 class="product__description">
+                We create additional value for companies, products, services as
+                well as verbal and visual ways to deliver it to the audience.
+              </h3>
+            </article>
 
-          <article class="agency__content agency__content--rigth">
-            <div class="agency__number">
-              <a class="number">002</a>
-            </div>
-            <h2 class="agency__title">
-              Сontent Production Graphic Design Video Production Post Production
-            </h2>
-            <div class="agency__button">
-              <button class="rigth__button">&#8594;</button>
-              <a class="button__text">Learn more</a>
-            </div>
-          </article>
+            <article class="product__content">
+              <img
+                class="product__photo"
+                src="./images/our-expertise/Communication.png"
+                alt="Communication"
+              />
+              <h3 class="product__title">Communication</h3>
+              <a class="product__description">
+                We strive to create communications that can increase media
+                performance. We use everything — words, meanings, stories, art,
+                movies.
+              </a>
+            </article>
 
-          <article class="agency__content agency__content--left">
-            <div class="agency__number">
-              <a class="number">003</a>
-            </div>
-            <h2 class="agency__title">
-              Marketing Strategy Email Marketing Paid Advertising Blog Content &
-              SEO
-            </h2>
-            <div class="agency__button">
-              <button class="rigth__button">&#8594;</button>
-              <a class="button__text">Learn more</a>
-            </div>
-          </article>
+            <article class="product__content">
+              <img
+                class="product__photo"
+                src="./images/our-expertise/Strategy.png"
+                alt="Communication"
+              />
+              <h3 class="product__title">Strategy</h3>
 
-          <article class="agency__content agency__content--rigth">
-            <div class="agency__number">
-              <a class="number">004</a>
-            </div>
-            <h2 class="agency__title">
-              Digital Communications Influencer Marketing Product Placements
-              Strategic Partnerships
-            </h2>
-            <div class="agency__button">
-              <button class="rigth__button">&#8594;</button>
-              <a class="button__text">Learn more</a>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="people-say">
-        <div class="people__conteiner">
-          <div class="people__content">
-            <a class="small-people__title">Testimonials</a>
-            <h2 class="people__title">What people say</h2>
+              <a class="product__description">
+                We create business growth strategies, from the moment of its
+                birth to the achievement of the necessary business indicators.
+              </a>
+            </article>
           </div>
+        </section>
 
-          <article class="people__coments">
-            <div class="div">
-              <div class="wrapper">
-                <div class="profile">
-                  <img
-                    class="people__photo"
-                    src="./images/people-say/Photo Mask.svg"
-                    alt="Communication"
-                  />
-                </div>
-              </div>
-            </div>
-            <div class="people__con">
-              <img
-                class="people__znak"
-                src="./images/people-say/Group 19.svg"
-                alt="Communication"
-              />
-              <a class="people__description">
-                AIR’s ideas are refreshing and out of the box. Authentic team
-                that focuses on the important path of the brand.
+        <section class="creative-agency" id="creative-agency">
+          <div class="creative__conteiner">
+            <div class="creative__content">
+              <a class="small-creative__title">Services</a>
+              <h2 class="creative__title">
+                Air is a full service creative agency
+              </h2>
+              <a class="creative-description">
+                Deep analytics, strong strategy and bright creative ideas.
+                <br />
+                <br />
+                We are sure that first-rate job is possible only if all three
+                components are united.
               </a>
             </div>
-            <div class="people__information">
-              <a class="people__name">Tal Gilad</a>
-              <a class="people__city">Teach for America</a>
-            </div>
-          </article>
 
-          <article class="people__coments">
-            <div class="div">
-              <div class="wrapper">
-                <div class="profile">
-                  <img
-                    class="people__photo"
-                    src="./images/people-say/Azadeh Hawkins.svg"
-                    alt="Communication"
-                  />
-                </div>
+            <article class="agency__content agency__content--left">
+              <div class="agency__number">
+                <a class="number">001</a>
               </div>
-            </div>
-            <div class="people__con">
-              <img
-                class="people__znak"
-                src="./images/people-say/Group 19.svg"
-                alt="Communication"
-              />
-              <a class="people__description">
-                AIR is an exceptional agency that leads with creative talent,
-                first-class account servicing.
-              </a>
-            </div>
-            <div class="people__information">
-              <a class="people__name">Azadeh Hawkins</a>
-              <a class="people__city">Hawkins Consulting</a>
-            </div>
-          </article>
-
-          <article class="people__coments">
-            <div class="div">
-              <div class="wrapper">
-                <div class="profile">
-                  <img
-                    class="people__photo"
-                    src="./images/people-say/Michel Grover.svg"
-                    alt="Communication"
-                  />
-                </div>
+              <div class="background"></div>
+              <h2 class="agency__title">
+                Brand Development Copywriting Logo & Webite Design Packaging
+              </h2>
+              <div class="agency__button">
+                <button class="rigth__button">&#8594;</button>
+                <a class="button__text">Learn more</a>
               </div>
-            </div>
-            <div class="people__con">
-              <img
-                class="people__znak"
-                src="./images/people-say/Group 19.svg"
-                alt="Communication"
-              />
-              <a class="people__description">
-                AIR raises the agency bar to stratospheric heights on both
-                creative output and client service.
-              </a>
-            </div>
-            <div class="people__information">
-              <a class="people__name">Michel Grover</a>
-              <a class="people__city">Hulu</a>
-            </div>
-          </article>
-        </div>
-      </section>
+            </article>
 
-      <section class="vision">
-        <div class="vision__conteiner">
-          <h2 class="vision__title">Vision, Passion, Results</h2>
-          <p class="vision__description">
-            We are sure that first-rate job is possible only if all three
-            components are united.
-          </p>
-          <div class="vision__button">
-            <button
-              class="button__vision"
-              href="#"
-            >
-              Apply
-            </button>
+            <article class="agency__content agency__content--rigth">
+              <div class="agency__number">
+                <a class="number">002</a>
+              </div>
+              <h2 class="agency__title">
+                Сontent Production Graphic Design Video Production Post
+                Production
+              </h2>
+              <div class="agency__button">
+                <button class="rigth__button">&#8594;</button>
+                <a class="button__text">Learn more</a>
+              </div>
+            </article>
+
+            <article class="agency__content agency__content--left">
+              <div class="agency__number">
+                <a class="number">003</a>
+              </div>
+              <h2 class="agency__title">
+                Marketing Strategy Email Marketing Paid Advertising Blog Content
+                & SEO
+              </h2>
+              <div class="agency__button">
+                <button class="rigth__button">&#8594;</button>
+                <a class="button__text">Learn more</a>
+              </div>
+            </article>
+
+            <article class="agency__content agency__content--rigth">
+              <div class="agency__number">
+                <a class="number">004</a>
+              </div>
+              <h2 class="agency__title">
+                Digital Communications Influencer Marketing Product Placements
+                Strategic Partnerships
+              </h2>
+              <div class="agency__button">
+                <button class="rigth__button">&#8594;</button>
+                <a class="button__text">Learn more</a>
+              </div>
+            </article>
           </div>
-        </div>
-      </section>
+        </section>
+
+        <section class="people-say">
+          <div class="people__conteiner">
+            <div class="people__content">
+              <a class="small-people__title">Testimonials</a>
+              <h2 class="people__title">What people say</h2>
+            </div>
+
+            <div class="conteiner__people">
+              <article class="people__coments">
+                <div class="div">
+                  <div class="wrapper">
+                    <div class="profile">
+                      <img
+                        class="people__photo"
+                        src="./images/people-say/Photo Mask.svg"
+                        alt="Communication"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="people__con">
+                  <img
+                    class="people__znak"
+                    src="./images/people-say/Group 19.svg"
+                    alt="Communication"
+                  />
+                  <a class="people__description">
+                    AIR’s ideas are refreshing and out of the box. Authentic
+                    team that focuses on the important path of the brand.
+                  </a>
+                </div>
+                <div class="people__information">
+                  <a class="people__name">Tal Gilad</a>
+                  <a class="people__city">Teach for America</a>
+                </div>
+              </article>
+
+              <article class="people__coments">
+                <div class="div">
+                  <div class="wrapper">
+                    <div class="profile">
+                      <img
+                        class="people__photo"
+                        src="./images/people-say/Azadeh Hawkins.svg"
+                        alt="Communication"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="people__con">
+                  <img
+                    class="people__znak"
+                    src="./images/people-say/Group 19.svg"
+                    alt="Communication"
+                  />
+                  <a class="people__description">
+                    AIR is an exceptional agency that leads with creative
+                    talent, first-class account servicing.
+                  </a>
+                </div>
+                <div class="people__information">
+                  <a class="people__name">Azadeh Hawkins</a>
+                  <a class="people__city">Hawkins Consulting</a>
+                </div>
+              </article>
+
+              <article class="people__coments">
+                <div class="div">
+                  <div class="wrapper">
+                    <div class="profile">
+                      <img
+                        class="people__photo"
+                        src="./images/people-say/Michel Grover.svg"
+                        alt="Communication"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="people__con">
+                  <img
+                    class="people__znak"
+                    src="./images/people-say/Group 19.svg"
+                    alt="Communication"
+                  />
+                  <a class="people__description">
+                    AIR raises the agency bar to stratospheric heights on both
+                    creative output and client service.
+                  </a>
+                </div>
+                <div class="people__information">
+                  <a class="people__name">Michel Grover</a>
+                  <a class="people__city">Hulu</a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="vision">
+          <div class="vision__conteiner">
+            <div class="title__content">
+              <h2 class="vision__title">Vision, Passion, Results</h2>
+            </div>
+            <div class="description__conteiner">
+              <p class="vision__description">
+                We are sure that first-rate job is possible only if all three
+                components are united.
+              </p>
+            </div>
+            <div class="vision__button">
+              <button
+                class="button__vision"
+                href="#"
+              >
+                Apply
+              </button>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
 
     <footer class="footer">
-      <section class="message">
-        <div class="send__messange">
-          <h1 class="message__title">Send us a message</h1>
-          <form
-            onsubmit="this.reset();return false;"
-            class="message__form"
-            action="#"
-            method="POST"
-          >
-            <input
-              name="email"
-              type="email"
-              class="message__input message__input--email"
-              placeholder="Email"
-              required
-            />
-            <input
-              name="name"
-              type="text"
-              class="message__input message__input--name"
-              placeholder="Name"
-              required
-            />
-            <textarea
-              name="message"
-              class="message__input message__input--message"
-              placeholder="Message"
-              required
-            ></textarea>
+      <div class="footer__conteiner">
+        <section class="message">
+          <div class="send__messange">
+            <h1 class="message__title">Send us a message</h1>
+            <form
+              onsubmit="this.reset();return false;"
+              class="message__form"
+              action="#"
+              method="POST"
+            >
+              <input
+                name="email"
+                type="email"
+                class="message__input message__input--email"
+                placeholder="Email"
+                required
+              />
+              <input
+                name="name"
+                type="text"
+                class="message__input message__input--name"
+                placeholder="Name"
+                required
+              />
+              <textarea
+                name="message"
+                class="message__input message__input--message"
+                placeholder="Message"
+                required
+              ></textarea>
 
-            <div class="message__button-wrapper">
-              <button
-                type="submit"
-                class="message__button"
-              >
-                Send
-              </button>
+              <div class="message__button-wrapper">
+                <button
+                  type="submit"
+                  class="message__button"
+                >
+                  Send
+                </button>
+              </div>
+            </form>
+          </div>
+        </section>
+
+        <section class="contact-us">
+          <h2 class="Contact__title">Contact us</h2>
+
+          <div class="calls-us">
+            <h2 class="calls-us__title">Call us</h2>
+            <a
+              href="tel:654 321 987"
+              class="calls-us__number"
+            >
+              654 321 987
+            </a>
+          </div>
+
+          <div class="visit-us">
+            <h2 class="visit-us__title">Visit us</h2>
+            <a
+              href="https://www.google.com.ua/maps/search/2905+West+Drive,+Buffalo+Grove/@42.0963267,-88.3401504,9z/data=!5m1!1e1?hl=ru&entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
+              class="visit-us__description"
+            >
+              2905 West Drive, Buffalo Grove
+            </a>
+          </div>
+
+          <div class="socials">
+            <h2 class="socials__title">our socials</h2>
+            <div class="icons__socials">
+              <a href="https://www.facebook.com/">
+                <img
+                  src="./images/socials/facebook 1.svg"
+                  alt="facebook"
+                  class="socials__image"
+                />
+              </a>
+
+              <a href="https://x.com/home?lang=ru">
+                <img
+                  src="./images/socials/twitter 1.svg"
+                  alt="twitter"
+                  class="socials__image"
+                />
+              </a>
+
+              <a href="https://www.instagram.com/">
+                <img
+                  src="./images/socials/instagram.svg"
+                  alt="instagram"
+                  class="socials__image"
+                />
+              </a>
             </div>
-          </form>
-        </div>
-      </section>
-
-      <section class="contact-us">
-        <h2 class="Contact__title">Contact us</h2>
-
-        <div class="calls-us">
-          <h2 class="calls-us__title">Call us</h2>
-          <a
-            href="tel:654 321 987"
-            class="calls-us__number"
-          >
-            654 321 987
-          </a>
-        </div>
-
-        <div class="visit-us">
-          <h2 class="visit-us__title">Visit us</h2>
-          <a
-            href="https://www.google.com.ua/maps/search/2905+West+Drive,+Buffalo+Grove/@42.0963267,-88.3401504,9z/data=!5m1!1e1?hl=ru&entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
-            class="visit-us__description"
-          >
-            2905 West Drive, Buffalo Grove
-          </a>
-        </div>
-
-        <div class="socials">
-          <h2 class="socials__title">our socials</h2>
-          <div class="icons__socials">
-            <a href="https://www.facebook.com/">
-              <img
-                src="./images/socials/facebook 1.svg"
-                alt="facebook"
-                class="socials__image"
-              />
-            </a>
-
-            <a href="https://x.com/home?lang=ru">
-              <img
-                src="./images/socials/twitter 1.svg"
-                alt="twitter"
-                class="socials__image"
-              />
-            </a>
-
-            <a href="https://www.instagram.com/">
-              <img
-                src="./images/socials/instagram.svg"
-                alt="instagram"
-                class="socials__image"
-              />
-            </a>
           </div>
-        </div>
+        </section>
 
-        <div class="navigation">
-          <div class="footer__logo">
-            <img
-              alt="footer__logo"
-              src="./images/logo/Logo_air.svg"
-              class="lolo__footer"
-            />
+        <section class="fooret__navigation">
+          <div class="navigation">
+            <div class="footer__logo">
+              <img
+                alt="footer__logo"
+                src="./images/logo/Logo_air.svg"
+                class="lolo__footer"
+              />
+            </div>
+
+            <div class="footer__nav">
+              <ul class="footer_list">
+                <li class="footer_item">
+                  <a
+                    class="footer__link"
+                    href="#who-we-are"
+                  >
+                    About us
+                  </a>
+                </li>
+
+                <li class="footer_item">
+                  <a
+                    class="footer__link"
+                    href="hidden"
+                  >
+                    Home
+                  </a>
+                </li>
+
+                <li class="footer_item">
+                  <a
+                    class="footer__link"
+                    href="#our-expertise"
+                  >
+                    Work
+                  </a>
+                </li>
+
+                <li class="footer_item">
+                  <a
+                    class="footer__link"
+                    href="#creative-agency"
+                  >
+                    Services
+                  </a>
+                </li>
+
+                <li class="footer_item">
+                  <a
+                    class="footer__link"
+                    href="#contact-us"
+                  >
+                    Contact Us
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
-
-          <div class="footer__nav">
-            <ul class="footer_list">
-              <li class="footer_item">
-                <a
-                  class="footer__link"
-                  href="#"
-                >
-                  About us
-                </a>
-              </li>
-
-              <li class="footer_item">
-                <a
-                  class="footer__link"
-                  href="#who-we-are"
-                >
-                  Home
-                </a>
-              </li>
-
-              <li class="footer_item">
-                <a
-                  class="footer__link"
-                  href="#our-expertise"
-                >
-                  Work
-                </a>
-              </li>
-
-              <li class="footer_item">
-                <a
-                  class="footer__link"
-                  href="#"
-                >
-                  Services
-                </a>
-              </li>
-
-              <li class="footer_item">
-                <a
-                  class="footer__link"
-                  href="#"
-                >
-                  Contact Us
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </footer>
-    <!-- </div> -->
   </body>
 </html>

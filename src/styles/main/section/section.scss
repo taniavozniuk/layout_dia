@@ -1,10 +1,16 @@
-.main__content {
-  padding-block: 120px;
+.main{
+
   background-color: #f2f6fa;
+
+}
+
+.main__container{
+  padding-block: 120px;
+  @include constentPaddingInLine;
 }
 
 .section__title {
-  margin: 24px 0 24px 0;
+  margin: 0 0 24px 0;
   font-weight: 600;
   font-size: 32px;
   line-height: 100%;

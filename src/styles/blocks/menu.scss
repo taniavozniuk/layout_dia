@@ -12,6 +12,8 @@
   opacity: 0;
   transform: translateY(-100%);
   transition: all 1500ms;
+  overflow: hidden ;
+
 
   &:target {
     opacity: 1;

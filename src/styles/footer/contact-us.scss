@@ -1,5 +1,15 @@
 .contact-us{
-  margin: 80px 20px 0 20px;
+  margin: 80px 0 0 0;
+  grid-column: 1 / -1;
+
+  @include onTablet{
+    margin: 120px 0 0 0;
+    grid-column: 1 / -1;
+  }
+
+  @include onDesktop{
+    grid-column: 7 / 12;
+  }
 }
 
 .Contact__title{
@@ -9,10 +19,16 @@
   font-size: 32px;
   line-height: 48px;
   margin: 0 0 48px 0;
+  @include onTablet{
+    margin: 0 0 56px 0;
+  }
 }
 
 .calls-us{
-margin-bottom: 40px;
+  margin-bottom: 40px;
+  @include onTablet{
+    margin-bottom: 48px;
+  }
 }
 
 .calls-us__title{
@@ -38,6 +54,9 @@ margin-bottom: 40px;
 .visit-us{
   margin-bottom: 40px;
   // @include pageGrid;
+  @include onTablet{
+    margin-bottom: 48px;
+  }
 }
 
 .visit-us__title{

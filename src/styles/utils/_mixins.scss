@@ -23,6 +23,20 @@
   }
 }
 
+@mixin constentPaddingInLine {
+  padding-inline: 20px;
+
+  @include onTablet {
+    padding-inline: 41px;
+  }
+
+  @include onDesktop() {
+    margin-inline: auto;
+    max-width: 1020px;
+    padding-inline: 54px;
+  }
+}
+
 @mixin onBigDesktop {
   @media (min-width: $bigdesktop-min-width) {
     @content;
