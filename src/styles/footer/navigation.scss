@@ -24,6 +24,7 @@
   @include onDesktop{
     flex-direction: row;
   }
+
 }
 
 .footer_list{
@@ -52,5 +53,8 @@
   letter-spacing: 3px;
   line-height: 19.5px;
 
-
+  &:hover {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
 }

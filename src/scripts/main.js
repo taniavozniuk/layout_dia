@@ -8,8 +8,8 @@ import photo3 from '../images/Photo3.svg';
 const image = [photo1, photo2, photo3];
 
 const headerWaves = document.querySelector('.waves');
-const prevButton = document.querySelector('.waves__button1');
-const newtButton = document.querySelector('.waves__button2');
+const prevButton = document.querySelector('.waves__button-first');
+const newtButton = document.querySelector('.waves__button-second');
 
 let currentImageIndex = 0;
 

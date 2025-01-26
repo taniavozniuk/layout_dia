@@ -1,106 +1,120 @@
-.contact-us{
-  margin: 80px 0 0 0;
+.contact-us {
+  padding: 80px 0 0 0;
   grid-column: 1 / -1;
 
-  @include onTablet{
-    margin: 120px 0 0 0;
+  @include onTablet {
+    padding: 120px 0 0 0;
     grid-column: 1 / -1;
   }
 
-  @include onDesktop{
+  @include onDesktop {
+    padding: 180px 0 0 0;
     grid-column: 7 / 12;
   }
-}
 
-.Contact__title{
-  color: #fff;
-  font-family: Poppins, Arial;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 48px;
-  margin: 0 0 48px 0;
-  @include onTablet{
-    margin: 0 0 56px 0;
+  &__title {
+    color: #fff;
+    font-family: Poppins, Arial;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+    margin: 0 0 48px 0;
+    @include onTablet {
+      margin: 0 0 56px 0;
+    }
+  }
+
+  &__calls-us {
+    margin-bottom: 40px;
+    @include onTablet {
+      margin-bottom: 48px;
+    }
+  }
+
+  &__calls-us-title {
+    margin: 0;
+    font-family: Poppins, Arial;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 19, 5px;
+    letter-spacing: 3px;
+    color: #959595;
+    margin-bottom: 8px;
+  }
+
+  &__number {
+    color: #ffffff;
+    text-decoration: none;
+    font-family:
+      Open Sans,
+      Arial;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+
+    &:hover {
+      color: #959595;
+    }
   }
 }
 
-.calls-us{
-  margin-bottom: 40px;
-  @include onTablet{
-    margin-bottom: 48px;
-  }
-}
-
-.calls-us__title{
-  margin: 0;
-  font-family: Poppins, Arial;
-  font-weight: 700;
-  font-size: 13px;
-  line-height: 19,5px;
-  letter-spacing: 3px;
-  color: #959595;
-  margin-bottom: 8px;
-}
-
-.calls-us__number{
-  color: #FFFFFF;
-  text-decoration: none;
-  font-family: Open Sans, Arial;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 36px;
-}
-
-.visit-us{
+.visit-us {
   margin-bottom: 40px;
   // @include pageGrid;
-  @include onTablet{
+  @include onTablet {
     margin-bottom: 48px;
   }
-}
 
-.visit-us__title{
-  margin: 0;
-  font-family: Poppins, Arial;
-  font-weight: 700;
-  font-size: 13px;
-  line-height: 19,5px;
-  letter-spacing: 3px;
-  color: #959595;
-  margin-bottom: 8px;
-  width: 100%;
+  &__title {
+    margin: 0;
+    font-family: Poppins, Arial;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 19, 5px;
+    letter-spacing: 3px;
+    color: #959595;
+    margin-bottom: 8px;
+    width: 100%;
 
-  @include onTablet{
-    width: 70%;
+    @include onTablet {
+      width: 70%;
+    }
+  }
+
+  &__description {
+    color: #ffffff;
+    text-decoration: none;
+    font-family:
+      Open Sans,
+      Arial;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    &:hover {
+      color: #959595;
+    }
   }
 }
 
-.visit-us__description{
-  color: #FFFFFF;
-  text-decoration: none;
-  font-family: Open Sans, Arial;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 36px;
-}
+.socials {
+  &__title {
+    margin: 0;
+    font-family: Poppins, Arial;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 19, 5px;
+    letter-spacing: 3px;
+    color: #959595;
+    margin-bottom: 16px;
+  }
 
-.socials__title{
-  margin: 0;
-  font-family: Poppins, Arial;
-  font-weight: 700;
-  font-size: 13px;
-  line-height: 19,5px;
-  letter-spacing: 3px;
-  color: #959595;
-  margin-bottom: 16px;
-}
-
-.icons__socials{
-  right: 32px;
-  gap: 32px;
-  display: flex;
-  :hover{
-    cursor: pointer;
-    opacity: 0.7;
+  &__icons {
+    right: 32px;
+    gap: 32px;
+    display: flex;
+    :hover {
+      cursor: pointer;
+      opacity: 0.7;
+    }
   }
 }

@@ -1,12 +1,10 @@
 .main{
-
   background-color: #f2f6fa;
-
 }
 
 .main__container{
   padding-block: 120px;
-  @include constentPaddingInLine;
+
 }
 
 .section__title {

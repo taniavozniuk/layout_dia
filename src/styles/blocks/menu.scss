@@ -8,22 +8,27 @@
   box-sizing: border-box;
   background-repeat: no-repeat;
   height: 100vh;
-  background-color: rgb(131, 166, 249);
+  background-color: var(--primary-color);
   opacity: 0;
   transform: translateY(-100%);
   transition: all 1500ms;
   overflow: hidden ;
 
-
   &:target {
     opacity: 1;
     transform: translateY(0);
   }
+
+  .menu__navm {
+    margin-bottom: 40px;
+  }
 }
 
-.menu__navm {
-  margin-bottom: 40px;
+.menu__content {
+  padding: 0 20px;
 }
+
+
 
 .navm__list {
   margin: 0;
@@ -35,7 +40,7 @@
 }
 
 .navm__link {
-  color: rgba(60, 59, 59, 0.784);
+  color: #fff;
   position: relative;
   text-decoration: none;
   font-family: Lora, Arial;
@@ -63,17 +68,13 @@
   }
 }
 
-.menu__content {
-  padding: 0 20px;
-}
-
 .menu__phone-number {
   display: block;
-  color: rgba(60, 59, 59, 0.784);
+  color: #fff;
   text-decoration: none;
 
   padding-bottom: 7px;
-  border-bottom: 1px dashed rgba(60, 59, 59, 0.784);
+  border-bottom: 1px dashed #fff;
   width: fit-content;
 
   font-size: 16px;

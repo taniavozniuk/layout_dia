@@ -1,4 +1,5 @@
 .who-we-are {
+  @include constentPaddingInLine;
   &__description {
     font-family:
       Open Sans,

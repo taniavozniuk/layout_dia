@@ -33,7 +33,7 @@
   position: absolute;
   width: 50%;
   height: 50%;
-  background-color: #2060F6;
+  background-color: var(--primary-color);
   animation: cssload-fold-thecube 2.76s infinite linear both;
 }
 

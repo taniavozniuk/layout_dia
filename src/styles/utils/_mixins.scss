@@ -23,6 +23,13 @@
   }
 }
 
+@mixin onBigDesktop {
+  @media (min-width: $bigdesktop-min-width) {
+    @content;
+  }
+}
+
+
 @mixin constentPaddingInLine {
   padding-inline: 20px;
 
@@ -37,11 +44,6 @@
   }
 }
 
-@mixin onBigDesktop {
-  @media (min-width: $bigdesktop-min-width) {
-    @content;
-  }
-}
 
 @mixin pageGrid {
   --colums: 2;

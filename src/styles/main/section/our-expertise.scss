@@ -3,107 +3,75 @@
   background-color: #ffffff;
   border-radius: 30px;
   padding: 0 0 155px 0;
-}
 
-.our-expertise__product {
-  display: flex;
-  flex-direction: column;
-  // align-items: center;
-  // max-width: 280px;
-  margin: 0 auto;
-  @include pageGrid;
+  @include constentPaddingInLine;
 
-  @include onDesktop{
-    width: 100%;
-    // margin-left: 20px;
-    // margin-right: 20px;
+  &__title {
+    padding-top: 72px;
+    text-align: center;
   }
-}
 
-.product__photo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  border-radius: 30px;
-  /* підсвічування */
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  &__products {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
 
-}
+    @include pageGrid;
 
-.product__photo:hover {
-  /* підсвічування */
-  box-shadow: 0px 0px 20px 8px rgba(37, 55, 87, 0.7);
-  transform: scale(1.05); /*  збільшення при наведенні */
-}
-
-.product__title {
-  font-family: Poppins, Arial;
-  margin-top: 32px;
-  text-align: center;
-  color: #253757;
-  font-size: 28px;
-  font-weight: 600;
-}
-
-.description{
-  align-items: center;
-  max-width: 280px;
-}
-
-.product__des{
-  width: 100%;
-
-  @include onTablet{
-    width: 70%;
+    @include onDesktop {
+      width: 100%;
+    }
   }
-}
 
-.product__description {
-  margin: 0;
-  margin-top: 16px;
-  text-align: center;
+  &__product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 56px;
+    grid-column: 1 / -1;
 
-  display: inline-block;
-  font-family:
-    Open Sans,
-    Arial;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  color: #6c788b;
+    @include onDesktop {
+      grid-column: span 4;
+    }
 
-  @include onTablet{
-    width: 70%;
+    &-photo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      border-radius: 30px;
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+
+      &:hover {
+        box-shadow: 0px 0px 20px 8px rgba(37, 55, 87, 0.7);
+        transform: scale(1.05);
+      }
+    }
+
+    &-title {
+      font-family: Poppins, Arial;
+      margin-top: 32px;
+      text-align: center;
+      color: #253757;
+      font-size: 28px;
+      font-weight: 600;
+    }
+
+    &-description {
+      margin: 0;
+      margin-top: 16px;
+      text-align: center;
+      display: inline-block;
+      font-family: Open Sans, Arial;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      color: #6c788b;
+
+      @include onTablet {
+        width: 70%;
+      }
+    }
   }
-}
-
-.product__content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin-top: 56px;
-  grid-column: 1 / -1;
-
-  @include onDesktop{
-    grid-column: span 4;
-  }
-}
-
-.our-expertise__title {
-  padding-top: 72px;
-}
-
-.communication-description {
-  padding-bottom: 72px;
-  margin: 0;
-  text-align: center;
-  font-family:
-    Open Sans,
-    Arial;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  color: #6c788b;
 }
