@@ -12,6 +12,11 @@
     grid-column: 7 / 12;
   }
 
+  @include onBigDesktop{
+    grid-column: 8 / 13;
+
+  }
+
   &__title {
     color: #fff;
     font-family: Poppins, Arial;

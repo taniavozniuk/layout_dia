@@ -56,68 +56,50 @@
     // padding-bottom: 48px;
   }
 
+
   &__agency-content {
     border-radius: 16px;
-    background-color: #ffffff;
+    background-color: #ede3e3;
     width: 100%;
-    height: 264px;
+    // height: 264px;
     transition:
       background 0.3s ease,
       transform 0.3s ease-in-out;
     margin-bottom: 24px;
     grid-column: 1 / -1;
-
-    @include onTablet {
-      &:nth-child(odd) {
-        position: absolute;
-        grid-column: 4 / span 3;
-      }
-
-      &:nth-child(even) {
-        grid-column: 1 / 4;
-      }
-      &:nth-child(odd):not(:nth-child(2)) {
-        margin-top: 384px;
-      }
-      &:nth-child(odd):not(:nth-child(3)) {
-        margin-top: 678px;
-      }
-    }
-
-    @include onDesktop {
-      &:nth-child(odd) {
-        position: absolute;
-        grid-column: 10 / span 3;
-      }
-
-      &:nth-child(even) {
-        grid-column: 7 / 10;
-      }
-      &:nth-child(odd):not(:nth-child(2)) {
-        margin-top: 148px;
-      }
-      &:nth-child(odd):not(:nth-child(3)) {
-        margin-top: 442px;
-      }
-
-      &:nth-child(even):not(:nth-child(1)) {
-        margin-top: 30px;
-      }
-      &:nth-child(even):not(:nth-child(4)) {
-        margin-top: 280px;
-      }
     }
 
     &:hover {
-      /* градієнтний фон */
       background: linear-gradient(
         135deg,
         rgba(113, 114, 114, 0.1),
         rgba(113, 114, 114, 0.1)
       );
-      box-shadow: 0 4px 10px rgba(224, 222, 222, 0.2); /* Легка тінь для глибини */
-      transform: scale(1.05);
+      box-shadow: 0 4px 10px rgba(224, 222, 222, 0.2);
+      // transform: scale(1.05) ;
     }
+  &__father-first{
+    @include onTablet{
+        grid-column: 1 / 4;
+    }
+    @include onDesktop{
+        transform: translateY(50%);
+        grid-column: 7 / 10;
+    }
+  }
+
+  &__father-second{
+    @include onTablet{
+        position: absolute;
+        grid-column: 4 / span 3;
+    }
+
+    @include onDesktop {
+        // transform: translateY(-50%);
+        position: absolute;
+        grid-column: 10 / span 3;
+  }
+
   }
 
   &__agency-number {
@@ -139,7 +121,7 @@
   &__agency-button {
     display: flex;
     gap: 16px;
-    padding: 32px 0 0 32px;
+    padding: 32px 0 32px 32px;
   }
 
   &__agency-rigth-button {

@@ -60,4 +60,8 @@
   @include onDesktop {
     --colums: 12;
   }
+
+  @include onBigDesktop{
+    --colums: 12;
+  }
 }
