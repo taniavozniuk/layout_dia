@@ -32,14 +32,14 @@ newtButton.addEventListener('click', () => {
 
 updateWavesImage();
 
-//анімація завнтаження
+// анімація завнтаження
 window.addEventListener('load', () => {
   const loader = document.getElementById('loader');
   const header = document.getElementById('header');
 
-  // Додати затримку перед приховуванням завантажувача
+
   setTimeout(() => {
-    loader.classList.add('hidden'); // Ховає завантажувач
-    header.classList.remove('hidden'); // Показує контент
-  }, 1500); // Затримка у мілісекундах (1500 = 1.5 секунди)
+    loader.classList.add('hidden');
+    header.classList.remove('hidden');
+  }, 1500);
 });
