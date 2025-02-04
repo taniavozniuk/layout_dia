@@ -11,16 +11,14 @@
 
   &__top {
     margin-top: 18px;
-    padding: 0 20px 0 20px;
+    padding: 0 20px;
     display: flex;
     justify-content: space-between;
-    // padding-bottom: 38px;
 
-    @include onTablet{
+    @include onTablet {
       padding: 0 41px 0 20px;
     }
   }
-
 
   &__icon {
     display: flex;
@@ -39,15 +37,16 @@
   }
 
   &__strategic-agency {
-    padding: 48px 20px 0 20px;
+    padding: 48px 20px 0;
 
-    @include onTablet{
-      padding: 56px 41px 0 41px;
-    }
     @include pageGrid;
 
-    @include onDesktop{
-      padding: 48px 54px 205px 54px;
+    @include onTablet {
+      padding: 56px 41px 0;
+    }
+
+    @include onDesktop {
+      padding: 48px 54px 205px;
     }
   }
 
@@ -60,41 +59,35 @@
     margin: 0;
     grid-column: -1 / 1;
 
-
     @include onTablet {
       height: 100%;
-      text-align: center;
       font-size: 62px;
       line-height: 68px;
       justify-content: flex-start;
       display: flex;
       text-align: left;
-
     }
 
-    @include onDesktop{
+    @include onDesktop {
       width: 200px;
       text-align: left;
     }
   }
 
   &__description {
-    margin: 32px 0 0 0;
+    margin: 32px 0 0;
     font-family: Poppins, sans-serif;
     width: 100%;
     font-weight: 400;
     font-size: 18px;
     line-height: 27px;
-    // color: #fff;
-    color: #E5E5E5;
+    color: #e5e5e5;
     grid-column: -1 / 1;
 
     @include onTablet {
-      // width: 65% ;
       grid-column: 1 / 5;
     }
   }
-
 
   &__button {
     display: flex;
@@ -102,11 +95,10 @@
     margin-top: 72px;
     grid-column: -1 / 1;
 
-    @include onTablet{
+    @include onTablet {
       grid-column: 1 / 4;
     }
   }
-
 }
 
 .waves {
@@ -125,16 +117,16 @@
   box-sizing: border-box;
   top: 30px;
 
-  @include onDesktop{
+  @include onDesktop {
     padding: 24px 54px;
     margin-top: 38px;
+    border-radius: 30px 0;
     position: absolute;
     right: 0;
     bottom: 0;
     width: 50%;
     height: calc(100vh - var(--header-height));
   }
-
 
   &__content {
     margin-top: auto; /* Опускає елемент вниз */
@@ -146,14 +138,13 @@
     gap: 16px;
   }
 
-
   &__button-first {
     width: 32px;
     height: 32px;
     border-radius: 100px;
-    background-color: #071d2b;
-    border: #2c2c2c;
-    color: #fff;
+    background-color: #fff;
+    border: #fff;
+    color: #253757;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -166,7 +157,7 @@
   }
 
   &__button-first1:hover {
-    background-color: #1c3b52;
+    background-color: #dbd1d1;
     transform: scale(1.1);
   }
 
@@ -198,9 +189,9 @@
     width: 32px;
     height: 32px;
     border-radius: 100px;
-    background-color: #071d2b;
-    border: #2c2c2c;
-    color: #fff;
+    background-color: #fff;
+    border: #fff;
+    color: #253757;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -213,12 +204,10 @@
     transition: all 0.3s ease-in-out;
   }
 
-
   &__button-second:hover {
-    background-color: #1c3b52;
+    background-color: #dbd1d1;
     transform: scale(1.1);
   }
-
 
   &__button-second:active {
     transform: scale(0.95);
@@ -240,12 +229,8 @@
     }
   }
 
-  &__button-second:hover {
-    animation: pulse 1s infinite; /* пульсація при наведенні */
-  }
-
   &__title {
-    margin: 16px 0 0 0;
+    margin: 16px 0 0;
     font-family: Poppins, sans-serif;
     font-weight: 700;
     font-size: 13px;
@@ -260,14 +245,11 @@
     line-height: 19px;
     color: #fff;
   }
-
 }
-
 
 .main {
   margin-top: 40px;
 }
-
 
 .button {
   width: 100%;
@@ -291,14 +273,14 @@
     background-color 0.3s ease,
     box-shadow 0.3s ease;
 
-    &:hover {
-      background-color: #1040b6;
-      transform: scale(1.01);
-      box-shadow: 0px 4px 15px rgba(1, 52, 171, 0.5);
-    }
+  &:hover {
+    background-color: #1040b6;
+    transform: scale(1.01);
+    box-shadow: 0 4px 15px rgba(1, 52, 171, 0.5);
+  }
 
-    &:active {
-      transform: scale(0.98);
-      box-shadow: 0px 4px 15px rgba(1, 52, 171, 0.5);
-    }
+  &:active {
+    transform: scale(0.98);
+    box-shadow: 0 4px 15px rgba(1, 52, 171, 0.5);
+  }
 }

@@ -29,7 +29,6 @@
   }
 }
 
-
 @mixin constentPaddingInLine {
   padding-inline: 20px;
 
@@ -43,7 +42,6 @@
     padding-inline: 54px;
   }
 }
-
 
 @mixin pageGrid {
   --colums: 2;
@@ -61,7 +59,7 @@
     --colums: 12;
   }
 
-  @include onBigDesktop{
+  @include onBigDesktop {
     --colums: 12;
   }
 }

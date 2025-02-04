@@ -61,7 +61,10 @@
     ></script>
   </head>
   <body class="page__body">
-    <!-- <div id="loader">
+    <div
+      id="loader"
+      class="loader"
+    >
       <div class="cssload-thecube">
         <div class="cssload-cube"></div>
         <div class="cssload-cube"></div>
@@ -69,18 +72,6 @@
         <div class="cssload-cube"></div>
       </div>
     </div>
-    <script>
-      window.addEventListener('load', () => {
-        const loader = document.getElementById('loader');
-        const header = document.getElementById('header');
-
-        // Додати затримку перед приховуванням завантажувача
-        setTimeout(() => {
-          loader.classList.add('hidden'); // Ховає завантажувач
-          header.classList.remove('hidden'); // Показує контент
-        }, 1500); // Затримка у мілісекундах (1500 = 1.5 секунди)
-      });
-    </script> -->
     <header
       id="hidden"
       class="header"
@@ -102,7 +93,7 @@
           <ul class="nav">
             <li class="nav__item">
               <a
-                href="#Aboutus"
+                href="#who-we-are"
                 class="nav__link"
               >
                 About us
@@ -110,7 +101,7 @@
             </li>
             <li class="nav__item">
               <a
-                href="#Services"
+                href="#our-expertise"
                 class="nav__link"
               >
                 Services
@@ -118,7 +109,7 @@
             </li>
             <li class="nav__item">
               <a
-                href="#Testimonials"
+                href="#testimonials"
                 class="nav__link"
               >
                 Testimonials
@@ -126,7 +117,7 @@
             </li>
             <li class="nav__item nav__item__contact">
               <a
-                href="#Contact Us"
+                href="#contact-us"
                 class="nav__link"
                 data-qa="hover"
               >
@@ -135,12 +126,12 @@
             </li>
           </ul>
         </nav>
-        <button
-          href="#Hire us"
+        <a
+          href="#Hire_us"
           class="nav__button"
         >
           Hire us
-        </button>
+        </a>
       </div>
       <div class="header__strategic-agency">
         <nav class="header__title">Strategic Agency</nav>
@@ -216,7 +207,7 @@
               <li class="navm__item">
                 <a
                   class="navm__link"
-                  href="#"
+                  href="#testimonials"
                 >
                   What people say
                 </a>
@@ -225,9 +216,18 @@
               <li class="navm__item">
                 <a
                   class="navm__link"
-                  href="#"
+                  href="#vision"
                 >
                   Vision, Passion, Results
+                </a>
+              </li>
+
+              <li class="navm__item">
+                <a
+                  class="navm__link"
+                  href="#contact-us"
+                >
+                  Contact Us
                 </a>
               </li>
             </ul>
@@ -328,74 +328,85 @@
                 components are united.
               </a>
             </div>
-            <div class="process__father-first">
-              <article class="process__agency-content">
-                <div class="process__agency-number">
-                  <a class="number">001</a>
-                </div>
-                <h2 class="process__agency-title">
-                  Brand Development Copywriting Logo & Webite Design Packaging
-                </h2>
-                <div class="process__agency-button">
-                  <button class="process__agency-rigth-button">&#8594;</button>
-                  <a class="process__agency-text">Learn more</a>
-                </div>
-              </article>
+            <div class="process__father">
+              <div class="process__father-first">
+                <article class="process__agency-content">
+                  <div class="process__agency-number">
+                    <a class="number">001</a>
+                  </div>
+                  <h2 class="process__agency-title">
+                    Brand Development Copywriting Logo & Webite Design Packaging
+                  </h2>
+                  <div class="process__agency-button">
+                    <button class="process__agency-rigth-button">
+                      &#8594;
+                    </button>
+                    <a class="process__agency-text">Learn more</a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="process__father-second">
+                <article class="process__agency-content">
+                  <div class="process__agency-number">
+                    <a class="number">002</a>
+                  </div>
+                  <h2 class="process__agency-title">
+                    Сontent Production Graphic Design Video Production Post
+                    Production
+                  </h2>
+                  <div class="process__agency-button">
+                    <button class="process__agency-rigth-button">
+                      &#8594;
+                    </button>
+                    <a class="process__agency-text">Learn more</a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="process__father-first">
+                <article class="process__agency-content">
+                  <div class="process__agency-number">
+                    <a class="number">003</a>
+                  </div>
+                  <h2 class="process__agency-title">
+                    Marketing Strategy Email Marketing Paid Advertising Blog
+                    Content & SEO
+                  </h2>
+                  <div class="process__agency-button">
+                    <button class="process__agency-rigth-button">
+                      &#8594;
+                    </button>
+                    <a class="process__agency-text">Learn more</a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="process__father-second">
+                <article class="process__agency-content">
+                  <div class="process__agency-number">
+                    <a class="number">004</a>
+                  </div>
+                  <h2 class="process__agency-title">
+                    Digital Communications Influencer Marketing Product
+                    Placements Strategic Partnerships
+                  </h2>
+                  <div class="process__agency-button">
+                    <button class="process__agency-rigth-button">
+                      &#8594;
+                    </button>
+                    <a class="process__agency-text">Learn more</a>
+                  </div>
+                </article>
+              </div>
             </div>
-
-            <div class="process__father-second">
-              <article class="process__agency-content">
-                <div class="process__agency-number">
-                  <a class="number">002</a>
-                </div>
-                <h2 class="process__agency-title">
-                  Сontent Production Graphic Design Video Production Post
-                  Production
-                </h2>
-                <div class="process__agency-button">
-                  <button class="process__agency-rigth-button">&#8594;</button>
-                  <a class="process__agency-text">Learn more</a>
-                </div>
-              </article>
-            </div>
-
-
-            <div class="process__father-first">
-              <article class="process__agency-content">
-                <div class="process__agency-number">
-                  <a class="number">003</a>
-                </div>
-                <h2 class="process__agency-title">
-                  Marketing Strategy Email Marketing Paid Advertising Blog Content
-                  & SEO
-                </h2>
-                <div class="process__agency-button">
-                  <button class="process__agency-rigth-button">&#8594;</button>
-                  <a class="process__agency-text">Learn more</a>
-                </div>
-              </article>
-            </div>
-
-            <div class="process__father-second">
-              <article class="process__agency-content">
-                <div class="process__agency-number">
-                  <a class="number">004</a>
-                </div>
-                <h2 class="process__agency-title">
-                  Digital Communications Influencer Marketing Product Placements
-                  Strategic Partnerships
-                </h2>
-                <div class="process__agency-button">
-                  <button class="process__agency-rigth-button">&#8594;</button>
-                  <a class="process__agency-text">Learn more</a>
-                </div>
-              </article>
-            </div>
-
           </div>
         </section>
 
-        <section class="testimonials">
+        <section
+          class="testimonials"
+          id="testimonials"
+        >
           <div class="testimonials__conteiner">
             <div class="testimonials__content">
               <a class="testimonials__description-title">Testimonials</a>
@@ -493,7 +504,10 @@
           </div>
         </section>
 
-        <section class="vision">
+        <section
+          class="vision"
+          id="vision"
+        >
           <div class="vision__conteiner">
             <div class="vision__title-content">
               <h2 class="vision__title">Vision, Passion, Results</h2>
@@ -561,7 +575,10 @@
           </div>
         </section>
 
-        <section class="contact-us">
+        <section
+          class="contact-us"
+          id="contact-us"
+        >
           <h2 class="contact-us__title">Contact us</h2>
 
           <div class="contact-us__calls-us">
@@ -587,7 +604,10 @@
           <div class="socials">
             <h2 class="socials__title">our socials</h2>
             <div class="socials__icons">
-              <a href="https://www.facebook.com/">
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+              >
                 <img
                   src="./images/socials/facebook 1.svg"
                   alt="facebook"
@@ -595,7 +615,10 @@
                 />
               </a>
 
-              <a href="https://x.com/home?lang=ru">
+              <a
+                href="https://x.com/home?lang=ru"
+                target="_blank"
+              >
                 <img
                   src="./images/socials/twitter 1.svg"
                   alt="twitter"
@@ -603,7 +626,10 @@
                 />
               </a>
 
-              <a href="https://www.instagram.com/">
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+              >
                 <img
                   src="./images/socials/instagram.svg"
                   alt="instagram"
@@ -617,11 +643,16 @@
         <section class="fooret__navigation">
           <div class="navigation">
             <div class="footer__logo">
-              <img
-                alt="footer__logo"
-                src="./images/logo/Logo_air.svg"
-                class="lolo__footer"
-              />
+              <a
+                class="f_logo"
+                href="#logo"
+              >
+                <img
+                  alt="footer__logo"
+                  src="./images/logo/Logo_air.svg"
+                  class="lolo__footer"
+                />
+              </a>
             </div>
 
             <div class="footer__nav">

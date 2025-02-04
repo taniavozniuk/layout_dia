@@ -3,8 +3,6 @@
   justify-content: center;
   position: relative;
   align-items: center;
-  // margin-top: 52px;
-  // gap: 45px;
 
   @include onDesktop {
     display: flex;
@@ -15,7 +13,7 @@
   font-family: Poppins, Arial, sans-serif;
   display: block;
   text-decoration: none;
-  color: #ffffff;
+  color: #fff;
   font-size: 13px;
   line-height: 19.5px;
   letter-spacing: 3px;
@@ -81,4 +79,5 @@
   letter-spacing: 3px;
   font-weight: 700;
   text-transform: uppercase;
+  margin-top: 7px;
 }

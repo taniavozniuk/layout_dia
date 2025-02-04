@@ -8,7 +8,7 @@
     background-repeat: no-repeat;
     background-position: center;
 
-    @include onDesktop{
+    @include onDesktop {
       display: none;
     }
   }
@@ -19,5 +19,3 @@
     background-position: center;
   }
 }
-
-

@@ -1,30 +1,28 @@
-.vision{
-  background-color: #FFFFFF;
+.vision {
+  background-color: #fff;
   margin-top: 120px;
-  // padding: 0 20px 0 20px;
-  // @include constentPaddingInLine;
   height: 100%;
 
-  @include onTablet{
+  @include onTablet {
     background-image: url(./images/bg.svg);
-    background-size: cover; /* Розтягує фото так, щоб воно покрило весь екран */
-    background-position: center; /* Центрує фото */
-    background-repeat: no-repeat; /* Вимикає повторення фото */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
-  &__title-content{
-    @include onTablet{
+  &__title-content {
+    @include onTablet {
       display: flex;
-      justify-content: center; /* Центрує по горизонталі */
+      justify-content: center;
       align-items: center;
       text-align: center;
     }
   }
 
-  &__title{
+  &__title {
     margin: 0;
     padding-top: 200px;
-    font-family: Poppins, Arial;
+    font-family: Poppins, Arial, sans-serif;
     font-weight: 600;
     font-size: 44px;
     line-height: 52.8px;
@@ -32,43 +30,41 @@
     color: #253757;
     width: 100%;
 
-    @include onTablet{
+    @include onTablet {
       width: 70%;
     }
   }
 
-  &__description-content{
+  &__description-content {
     display: flex;
     justify-content: center; /* Центрує по горизонталі */
     align-items: center;
     text-align: center;
   }
 
-  &__description{
-    margin: 24px 0 0 0;
-    font-family:
-    Open Sans,
-    Arial;
+  &__description {
+    margin: 24px 0 0;
+    font-family: 'Open Sans', Arial, sans-serif;
     font-weight: 600;
     font-size: 24px;
     line-height: 36px;
     text-align: center;
-    color: #6C788B;
+    color: #6c788b;
     width: 100%;
 
-    @include onDesktop{
+    @include onDesktop {
       width: 50%;
     }
   }
 
-  &__wraper-button{
+  &__wraper-button {
     display: flex;
     justify-content: center;
-    padding: 52px 0 200px 0;
+    padding: 52px 0 200px;
   }
 
-  &__button{
-    font-family: Poppins, Arial;
+  &__button {
+    font-family: Poppins, Arial, sans-serif;
     width: 100%;
     height: 56px;
     border-radius: 8px;
@@ -90,27 +86,23 @@
       background-color 0.3s ease,
       box-shadow 0.3s ease;
 
-      @include onTablet{
-        width: 264px;
-      }
+    @include onTablet {
+      width: 264px;
+    }
 
-      @include onDesktop{
-        width: 264px;
-      }
+    @include onDesktop {
+      width: 264px;
+    }
 
-      &:hover {
-        background-color: #1040b6;
-        transform: scale(1.01);
-        box-shadow: 0px 4px 15px rgba(1, 52, 171, 0.5);
-      }
+    &:hover {
+      background-color: #1040b6;
+      transform: scale(1.01);
+      box-shadow: 0 4px 15px rgba(1, 52, 171, 0.5);
+    }
 
-      &:active {
-        transform: scale(0.98);
-        box-shadow: 0px 4px 15px rgba(1, 52, 171, 0.5);
-      }
+    &:active {
+      transform: scale(0.98);
+      box-shadow: 0 4px 15px rgba(1, 52, 171, 0.5);
+    }
   }
 }
-
-
-
-
